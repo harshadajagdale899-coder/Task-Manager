@@ -15,20 +15,28 @@ public class Main {
             System.out.println("3. Mark as Complete");
             System.out.println("4. Delete Task");
             System.out.println("5. Exit.");
-            System.out.println("Enter Your choice : ");
+            System.out.print("Enter Your choice : ");
             int choice = sc.nextInt();
             sc.nextLine();
 
             switch (choice){
                 case 1 :
-                    System.out.println("Enter the title of new Task : ");
+                    System.out.print("Enter the title of new Task : ");
                     String newTitle = sc.nextLine();
+                    if(newTitle.trim().isEmpty()){
+                        System.out.println("Task title cannot be empty.");
+                        System.out.println();
+                        System.out.println();
+                        break;
+                    }
                     try{
                         Task t1 = newSrev.addTask(newTitle);
                         System.out.println("The tasks are Added successfully!");
                     }catch (Exception e){
                         System.out.println("Error : "+ e.getMessage());
                     }
+                    System.out.println();
+                    System.out.println();
                     break;
 
                 case 2 :
@@ -39,6 +47,8 @@ public class Main {
                     for(Task el : copy){
                          System.out.println("Task no : "+el.getId()+ "  Task : "+el.getTitle() + "   Status : "+(el.isComplete()? "Completed" : "Pending"));
                     }
+                    System.out.println();
+                    System.out.println();
                     break;
 
                 case 3:
@@ -56,6 +66,8 @@ public class Main {
                     }catch (NoSuchElementException e){
                         System.out.println("Error : "+ e.getMessage());
                     }
+                    System.out.println();
+                    System.out.println();
                     break;
 
                 case 4:
@@ -77,6 +89,8 @@ public class Main {
                     }catch (IllegalArgumentException e){
                         System.out.println("Error : "+ e.getMessage());
                     }
+                    System.out.println();
+                    System.out.println();
                     break;
                 case 5 :
                     System.out.println("Exited");
