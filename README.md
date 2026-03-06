@@ -27,6 +27,3 @@ Task-Manager
 │
 └── README.md
 
-  
-3. Open the project in IntelliJ IDEA
-4. Run the Main.java file
