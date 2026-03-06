@@ -27,3 +27,7 @@ Task-Manager
 │
 └── README.md
 
+## Application Demo
+<img width="1726" height="621" alt="task-manager-demo" src="https://github.com/user-attachments/assets/805fabee-5676-424b-9e65-df1f54c2e533" />
+
+
