@@ -16,7 +16,17 @@ This project allows users to manage their daily tasks efficiently using a simple
 - Java Collections
 - IntelliJ IDEA
 
-## How to Run
-1. Clone the repository
-2. Open the project in IntelliJ IDEA
-3. Run the Main.java file
+## Project Structure.
+Task-Manager
+│
+├── src
+│   └── com.todo
+│       ├── Main.java
+│       ├── Task.java
+│       └── TaskService.java
+│
+└── README.md
+
+  
+3. Open the project in IntelliJ IDEA
+4. Run the Main.java file
